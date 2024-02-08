@@ -58,6 +58,57 @@ public class Main {
 			System.out.println(a +": çift sayıdır.");
 		}
 		
+		System.out.println("----------------------");
+		
+		//ince - kalın sesli harf bulma
+		
+		//başka karakter girilmemesi için switch - case ile daha sağlıklı algoritma yapılabilir.
+		char harf='A';
+		
+		boolean inceMi=true;
+			
+		
+		char[] kalınHarfler= {'A','I','O','U'};
+			
+		
+		for(int i=0;i<kalınHarfler.length;i++) {
+			if(kalınHarfler[i]==harf) {
+				inceMi=false;
+			}
+				
+		}
+			
+		
+		if(inceMi==true) {
+			System.out.println(harf +": İnce sesli harftir.");
+		}else if(inceMi==false) {
+			System.out.println(harf +": Kalın sesli harftir.");
+		}
+		
+		System.out.println("------------------");
+		
+		//dizi içinden istenen veriyi çekme
+		
+		int[] sayılar= {1,2,3,4,5,6};
+		int istenen=5;
+		boolean buldunMu=false;
+		
+		
+			for(int sayı1:sayılar) {
+			if(sayı1==istenen) {
+				buldunMu = true;
+				break;
+				
+			}
+			
+		}
+			
+		
+		if(buldunMu) {
+			System.out.println(istenen +" sayısı dizide var. ");
+		}else {
+			System.out.println(istenen+" sayısı dizide yok.");
+		}
 		
 		
 		
